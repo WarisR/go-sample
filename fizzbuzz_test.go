@@ -84,3 +84,19 @@ func TestFizzBuzzShouldSayFizzWhenInputIs10(t *testing.T) {
 		t.Errorf("it should say %q but get %q", expected, result)
 	}
 }
+
+func TestFizzBuzzShouldSayFizzWhenInputIs15(t *testing.T) {
+	result := fizzbuzz.Say(15)
+	expected := "FizzBuzz"
+	if expected != result {
+		t.Errorf("it should say %q but get %q", expected, result)
+	}
+}
+
+func TestFizzBuzzShouldSayFizzWhenInputIs30(t *testing.T) {
+	result := fizzbuzz.Say(30)
+	expected := "FizzBuzz"
+	if expected != result {
+		t.Errorf("it should say %q but get %q", expected, result)
+	}
+}
